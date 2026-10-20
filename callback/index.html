@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>Tesla 인증 완료</title>
+<body style="font-family:sans-serif;padding:24px">
+<h2>테슬라 승인 완료</h2><p>아래 코드를 복사해서 테슬라 정비소에게 보내 주세요.</p>
+<textarea id="c" rows="4" style="width:100%"></textarea>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')||('오류: '+(p.get('error')||'코드 없음'));</script>
